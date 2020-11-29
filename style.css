@@ -1,0 +1,39 @@
+.block2{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border: solid 1px black;
+    height: 1000px;
+    background-color: white;
+}
+.block1{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border: solid 2px black;
+    text-indent: 20px;
+    background-color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline;
+    
+}
+li a{
+    display: inline;
+    color: grey;
+    text-align: center;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111;
+}
+body{
+    background-color: bisque;
+}
