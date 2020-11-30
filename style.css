@@ -3,17 +3,17 @@
 body{
     background-color: #ccc4b9;
     margin: 0px;
+    padding-top: 160px;
     
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 120px;
     background-color: #271a15;
     overflow: hidden;
     transition: 0.4s;
-    z-index: 99;
     padding: 20px;
     width:100%;
 
