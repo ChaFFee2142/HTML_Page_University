@@ -11,23 +11,51 @@
 
 <body>
     <header id="header">
-        <div class="header-container">
+        <div class="header-container" id="header-container">
             <img src="Images/logo.png" alt="Main page">
             <nav>
-                <ul>
-                    <li><a>Home</a></li>
+                <ul id="ul">
+                    <!--<li><a>Home</a></li>
                     <li><a>Gallery</a></li>
                     <li><a>About</a></li>
+                    -->
+                    <li><button class="tablink" onclick="openPage('Home', this,  'rgb(109, 60, 60)')">Home</button></li>
+                    <li><button class="tablink" onclick="openPage('News', this,  'rgb(46, 90, 46)')" id="defaultOpen">News</button></li>
+                    <li><button class="tablink" onclick="openPage('Contact', this, 'rgb(59, 59, 139)')">Contact</button></li>
+                    <li><button class="tablink" onclick="openPage('About', this, 'rgb(165, 135, 79)' )">About</button></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="header-background">
 
-    <hr>
+
+    </div>
+    
+
+    
 
     
     <div class="pageContent">
-        
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+          </div>
+          
+          <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p>
+          </div>
+          
+          <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+          </div>
+          
+          <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+          </div>
     </div>
     <div class="right"></div>
     

@@ -3,7 +3,7 @@
 body{
     background-color: #ccc4b9;
     margin: 0px;
-    padding-top: 160px;
+    
     
 }
 
@@ -19,6 +19,14 @@ header{
 
 }
 
+.header-background{
+    height: 160px;
+    max-width: 1300px;
+    margin: 0 auto;
+    
+    background-color: rgb(177, 132, 77);
+}
+
 
 .header-container{
     position: relative;
@@ -27,7 +35,6 @@ header{
     margin: 0 auto;
     height: 86px;
     max-width: 1300px;
-    
     
     
 }
@@ -53,18 +60,26 @@ nav ul{
     padding: 0;
     margin: 0;
     margin-right: 20px;
+    
 }
 
 nav li{
     display: inline;
     list-style-type: none;
-    padding: 0 30px;
+    padding: 0 15px;
+    
+    
     
     
 }
 nav a{
+    padding: 10px;
     color: white;
     font-size: 32px;
+    transition: 0.4s;
+    border-radius: 15%;
+    transition: background-color 0.1s;
+    transition: font-size 0.4s;
 }
 
 .pageContent{
@@ -84,6 +99,39 @@ nav a{
     
 
 nav a:hover{
-    background-color: grey;
-    color: white;
+    background-color: rgb(104, 63, 17);
+    color: rgb(255, 255, 255);
 }
+
+
+
+
+.tablink {
+    background-color: rgb(56, 38, 33);
+    font-size: 32px;
+    color: white;
+    border: none;
+    padding: 35px 30px;
+    outline: none;
+    cursor: pointer;
+    width: initial + 100px;
+    transition: font-size 0.4s;
+    top: 50%;
+    transform: translateY(-30%);
+    
+  
+  }
+  .tablink:hover {
+    background-color: #777;
+  }
+
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+    #Home {background-color: rgb(109, 60, 60);}
+    #News {background-color: rgb(46, 90, 46);}
+    #Contact {background-color: rgb(59, 59, 139);}
+    #About {background-color: rgb(165, 135, 79);}
