@@ -4,7 +4,7 @@ window.onscroll = function() {
 
 function scrollFunction(){
     var a = document.getElementsByClassName("tablink");
-    var b = document.getElementById("backPhoto")
+    var b = document.getElementById("background")
     if(document.documentElement.scrollTop > 80){
         document.getElementById("header").style.height = "50px";
         for(var i = 0; i < a.length; i++){
@@ -18,15 +18,17 @@ function scrollFunction(){
         }
     }
 
-    if(document.documentElement.scrollTop < 600){
-        b.setAttribute("src", "Images/1.jpg")
-        b.style.top = "80px";
-        b.style.height = "750px";
+    if(document.documentElement.scrollTop < 680){
+        b.style.backgroundImage = "url('Images/1.jpg')";
+        b.style.top = "50px";
+        //b.style.height = "750px";
+        //b.style.height = "100%";
     }
     else{
-        b.setAttribute("src", "Images/5.jpg")
+        b.style.backgroundImage = "url('Images/5.jpg')";
         b.style.top = "50px";
-        b.style.height = "960px";
+        //b.style.height = "960px";
+        //b.style.height = "100%";
     }
 
 }

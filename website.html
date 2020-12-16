@@ -10,28 +10,29 @@
 <!--Comment-->
 
 <body>
-    <header id="header">
-        <div class="header-container" id="header-container">
+  <header id="header">
+    <div class="header-container" id="header-container">
             <img src="Images/logo.png" alt="Main page">
             <nav>
-                <ul id="ul">
+              <ul id="ul">
                     <!--<li><a>Home</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>About</a></li>
+                      <li><a>Gallery</a></li>
+                      <li><a>About</a></li>
                     -->
                     <li><button class="tablink" onclick="openPage('Home', this,  '#EFEBE9')">Home</button></li>
                     <li><button id="default-open" class="tablink" onclick="openPage('News', this,  '#EFEBE9')">News</button></li>
                     <li><button class="tablink" onclick="openPage('Contact', this, '#EFEBE9')">Contact</button></li>
                     <li><button class="tablink" onclick="openPage('About', this, '#EFEBE9' )">About</button></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <!--<div class="header-background"></div>-->
+              </nav>
+            </div>
+          </header>
+  <div id="background">
+          <!--<div class="header-background"></div>-->
     
-    <div id="picture-1">
+          <div id="picture-1">
       <h1>Welcome to the Coffee House</h1>
-      <img id="backPhoto" src="Images/1.jpg" alt="">
+      <!--<img id="backPhoto" src="Images/1.jpg" alt="">-->
       
     </div>
     
@@ -67,8 +68,10 @@
             <p>Who we are and what we do.</p>
           </div>
     </div>
-    <div id="picture-2"style="height: 700px;"></div>
-
+    <div id="picture-2"style="height: 700px;">
+      <h1>We love coffee</h1>
+    </div>
+    
     <div class="right">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam diam est, auctor sit amet elit non, condimentum mollis massa. Nunc laoreet nibh at sapien interdum, et commodo purus accumsan. Nulla facilisi. Phasellus suscipit sem sed risus porta, fringilla suscipit risus sagittis. Suspendisse nec lacus leo. Suspendisse eget ipsum non ligula laoreet cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce augue metus, semper vel massa ac, cursus pretium neque. Sed quis cursus odio. Aenean ullamcorper orci id arcu rhoncus pulvinar. Mauris tristique massa eget orci commodo auctor. Duis arcu mi, cursus ac hendrerit ac, convallis at purus.
@@ -85,5 +88,6 @@ Aenean vel quam at mauris gravida convallis quis et purus. Aliquam eu mattis dol
       </div>
     </footer>
     <script type="text/javascript" src="javascript.js"></script>
+  </div>
 </body>
 </html>
