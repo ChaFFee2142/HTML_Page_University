@@ -5,31 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" type="text/css" href="style.css" >
-    <script type="text/javascript" src="javascript.js"></script>
-    </head>
+    
+</head>
 <!--Comment-->
 
 <body>
-    <header id="header">
-        <div class="header-container">
+  <header id="header">
+    <div class="header-container" id="header-container">
             <img src="Images/logo.png" alt="Main page">
             <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>About</a></li>
+              <ul id="ul">
+                    <!--<li><a>Home</a></li>
+                      <li><a>Gallery</a></li>
+                      <li><a>About</a></li>
+                    -->
+                    <li><button class="tablink" onclick="openPage('Home', this,  '#EFEBE9')">Home</button></li>
+                    <li><button id="default-open" class="tablink" onclick="openPage('News', this,  '#EFEBE9')">News</button></li>
+                    <li><button class="tablink" onclick="openPage('Contact', this, '#EFEBE9')">Contact</button></li>
+                    <li><button class="tablink" onclick="openPage('About', this, '#EFEBE9' )">About</button></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <hr>
+              </nav>
+            </div>
+          </header>
+  <div id="background">
+          <!--<div class="header-background"></div>-->
+    
+          <div id="picture-1">
+      <h1>Welcome to the Coffee House</h1>
+      <!--<img id="backPhoto" src="Images/1.jpg" alt="">-->
+      
+    </div>
+    
 
     
     <div class="pageContent">
-        
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam diam est, auctor sit amet elit non, condimentum mollis massa. Nunc laoreet nibh at sapien interdum, et commodo purus accumsan. Nulla facilisi. Phasellus suscipit sem sed risus porta, fringilla suscipit risus sagittis. Suspendisse nec lacus leo. Suspendisse eget ipsum non ligula laoreet cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce augue metus, semper vel massa ac, cursus pretium neque. Sed quis cursus odio. Aenean ullamcorper orci id arcu rhoncus pulvinar. Mauris tristique massa eget orci commodo auctor. Duis arcu mi, cursus ac hendrerit ac, convallis at purus.
+
+              Pellentesque feugiat eros eget dui finibus, id mattis ligula viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut feugiat diam eget nulla placerat maximus. Curabitur placerat id lorem a congue. Sed posuere, urna sed varius mattis, purus purus scelerisque augue, a commodo justo ipsum et augue. Vestibulum ut dolor at arcu ullamcorper posuere a at odio. Ut placerat sem condimentum tempor ornare.
+              
+              Aenean vel quam at mauris gravida convallis quis et purus. Aliquam eu mattis dolor. Proin vestibulum tristique ante accumsan auctor. Nullam vulputate euismod aliquet. Nunc rutrum nibh vitae vehicula posuere. Maecenas metus leo, iaculis at laoreet sit amet, dapibus et eros. Aenean interdum pretium nibh, vitae blandit mauris egestas at. Nulla malesuada tellus dui, eu mattis magna fermentum quis. Curabitur tincidunt placerat hendrerit. Fusce imperdiet lacus eget nulla convallis, ac dapibus lectus commodo. Mauris sollicitudin orci a nisl consectetur lobortis. In at diam sem. Nunc tristique, dui ut ullamcorper blandit, mauris lectus vulputate ligula, nec interdum nisi massa a nisi. Suspendisse congue finibus neque non placerat. In tincidunt magna nec sem porttitor, non volutpat lectus lobortis. Praesent in justo volutpat, laoreet risus ut, efficitur mi.
+              
+              Nullam pharetra sagittis erat. Etiam molestie consectetur erat, at consequat turpis faucibus id. Mauris vulputate magna enim. Ut rutrum elit turpis, mollis maximus felis congue quis. Suspendisse nisl orci, pharetra in pharetra id, ullamcorper sit amet risus. Duis dictum quis tellus vitae imperdiet. Pellentesque pharetra libero pharetra erat convallis elementum. Vestibulum mollis, lectus quis egestas aliquet, magna ex gravida arcu, ut semper ante erat ac risus. Integer ultrices pretium purus, eu eleifend ex egestas a. Cras velit dolor, sagittis id erat quis, commodo varius mauris. Aenean rutrum porta nisl id pretium. Vestibulum sapien lacus, lacinia in congue gravida, maximus ut mauris. Nullam molestie nibh sit amet commodo mattis. Phasellus a quam eros. Vestibulum dictum ante enim, nec cursus magna ultrices ac. Pellentesque interdum semper justo eu vehicula.
+              
+              Integer euismod dui est, at ornare sapien lacinia non. Vestibulum luctus odio sed metus facilisis, ac pulvinar nulla fringilla. In efficitur ac sem sed condimentum. Nullam hendrerit, sem non condimentum sodales, magna dolor dictum ante, vitae elementum nunc erat ut eros. Integer quis mauris at orci auctor congue. Donec libero magna, pulvinar at felis at, fringilla accumsan augue. Duis iaculis venenatis leo, quis tincidunt libero scelerisque quis. Morbi ut dictum magna. Quisque in lectus rhoncus, pretium nisi ac, mollis ante. Ut nec posuere mi.</p>
+          </div>
+          
+          <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p>
+          </div>
+          
+          <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+          </div>
+          
+          <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+          </div>
     </div>
-    <div class="right"></div>
+    <div id="picture-2"style="height: 700px;">
+      <h1>We love coffee</h1>
+    </div>
     
+    <div class="right">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam diam est, auctor sit amet elit non, condimentum mollis massa. Nunc laoreet nibh at sapien interdum, et commodo purus accumsan. Nulla facilisi. Phasellus suscipit sem sed risus porta, fringilla suscipit risus sagittis. Suspendisse nec lacus leo. Suspendisse eget ipsum non ligula laoreet cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce augue metus, semper vel massa ac, cursus pretium neque. Sed quis cursus odio. Aenean ullamcorper orci id arcu rhoncus pulvinar. Mauris tristique massa eget orci commodo auctor. Duis arcu mi, cursus ac hendrerit ac, convallis at purus.
+
+Pellentesque feugiat eros eget dui finibus, id mattis ligula viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut feugiat diam eget nulla placerat maximus. Curabitur placerat id lorem a congue. Sed posuere, urna sed varius mattis, purus purus scelerisque augue, a commodo justo ipsum et augue. Vestibulum ut dolor at arcu ullamcorper posuere a at odio. Ut placerat sem condimentum tempor ornare.
+
+Aenean vel quam at mauris gravida convallis quis et purus. Aliquam eu mattis dolor. Proin vestibulum tristique ante accumsan auctor. Nullam vulputate euismod aliquet. Nunc rutrum nibh vitae vehicula posuere. Maecenas metus leo, iaculis at laoreet sit amet, dapibus et eros. Aenean interdum pretium nibh, vitae blandit mauris egestas at. Nulla malesuada tellus dui, eu mattis magna fermentum quis. Curabitur tincidunt placerat hendrerit. Fusce imperdiet lacus eget nulla convallis, ac dapibus lectus commodo. Mauris sollicitudin orci a nisl consectetur lobortis. In at diam sem. Nunc tristique, dui ut ullamcorper blandit, mauris lectus vulputate ligula, nec interdum nisi massa a nisi. Suspendisse congue finibus neque non placerat. In tincidunt magna nec sem porttitor, non volutpat lectus lobortis. Praesent in justo volutpat, laoreet risus ut, efficitur mi.
+      </p>
+    </div>
+    
+    <footer id="footer">
+      <div class="footer-container">
+        <h1>FOOTER</h1>
+      </div>
+    </footer>
+    <script type="text/javascript" src="javascript.js"></script>
+  </div>
 </body>
 </html>
